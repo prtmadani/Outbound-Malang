@@ -366,7 +366,11 @@
 
 .gallery-card img {
 
-    transition: transform 1s ease;
+    /* opacity WAJIB ikut di sini — kalau tidak, fade dari style.css hilang
+       (aturan ini dimuat setelah style.css jadi menang) dan gambar berganti
+       mendadak alih-alih transisi halus. Durasi disamakan dengan FADE_MS
+       di js/gallery-coverflow.js supaya src tidak berganti di tengah animasi. */
+    transition: transform .38s cubic-bezier(.34, 1.56, .64, 1), opacity .38s ease;
 
 }
 

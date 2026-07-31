@@ -81,50 +81,6 @@
             will-change: transform;
         }
 
-        .fan-stack .testimonial-card--left {
-            left: 0;
-            top: 60px;
-            transform: rotate(-9deg);
-            z-index: 1;
-        }
-
-        .fan-stack .testimonial-card--right {
-            right: 0;
-            top: 60px;
-            transform: rotate(9deg);
-            z-index: 1;
-        }
-
-        .fan-stack .testimonial-card--center {
-            left: 50%;
-            top: 0;
-            transform: translateX(-50%) rotate(0deg) scale(1.05);
-            z-index: 2;
-            box-shadow: var(--shadow-strong);
-        }
-
-        .fan-stack .testimonial-card--left:hover {
-            transform: rotate(0deg) scale(1.08) translateY(-10px);
-            z-index: 5;
-            box-shadow: var(--shadow-strong);
-        }
-
-        .fan-stack .testimonial-card--right:hover {
-            transform: rotate(0deg) scale(1.08) translateY(-10px);
-            z-index: 5;
-            box-shadow: var(--shadow-strong);
-        }
-
-        .fan-stack .testimonial-card--center:hover {
-            transform: translateX(-50%) rotate(0deg) scale(1.1) translateY(-10px);
-            z-index: 5;
-        }
-
-        .fan-stack:hover .testimonial-card:not(:hover) {
-            opacity: .7;
-            filter: saturate(.85);
-        }
-
         @media (max-width: 767px) {
             .fan-stack {
                 min-height: 0;
@@ -176,7 +132,7 @@
                     <li class="nav-menu__item"><a href="article.html" class="nav-menu__link">Blog</a></li>
                     <li class="nav-menu__item"><a href="contact.html" class="nav-menu__link">Kontak</a></li>
                     <li class="nav-cta">
-                        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Outbound%20Malang%2C%20saya%20ingin%20bertanya%20seputar%20outbound"
+                        <a href="https://wa.me/6282211221909?text=Halo%20Admin%20Outbound%20Malang%2C%20saya%20ingin%20bertanya%20seputar%20outbound"
                             class="btn-brand" target="_blank" rel="noopener" aria-label="Hubungi Admin via WhatsApp">
                             <i class="bi bi-whatsapp" aria-hidden="true"></i> Hubungi Admin
                         </a>
@@ -192,9 +148,8 @@
     <main id="main-content">
         <!-- ===================== PAGE HEADER ===================== -->
         <section class="page-header">
-            <div class="page-header__bg"
-                style="background-image:url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1600&q=80');"
-                role="img" aria-label="Instruktur outbound Malang memandu peserta di jalur hutan"></div>
+            <div class="page-header__bg" style="background-image:url('images/outbound-Tentang-Kami.webp');" role="img"
+                aria-label="Instruktur outbound Malang memandu peserta di jalur hutan"></div>
             <div class="container page-header__content">
                 <h1 class="hero__title hero__title--compact">Tentang Outbound Malang</h1>
                 <nav class="breadcrumb-nav" aria-label="Breadcrumb">
@@ -212,7 +167,7 @@
                         <div class="about-media">
                             <div class="about-media__accent" aria-hidden="true"></div>
                             <div class="about-media__frame">
-                                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80"
+                                <img src="images/Outbound_instructors.webp"
                                     alt="Instruktur outbound bersertifikat BNSP memandu peserta panjat tebing"
                                     loading="lazy" width="900" height="1125">
                             </div>
@@ -365,8 +320,8 @@
                     <p class="section-lead">Fasilitator berpengalaman yang memandu setiap kegiatan dengan aman dan penuh
                         energi positif.</p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3 reveal reveal-up reveal-delay-1">
+                <div class="trainer-stack reveal reveal-scale">
+                    <div class="trainer-card">
                         <div class="service-card text-center h-100">
                             <div class="img-zoom-wrap rounded-4 overflow-hidden mb-3">
                                 <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=400&q=80"
@@ -378,7 +333,7 @@
                                 Outdoor.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 reveal reveal-up reveal-delay-2">
+                    <div class="trainer-card">
                         <div class="service-card text-center h-100">
                             <div class="img-zoom-wrap rounded-4 overflow-hidden mb-3">
                                 <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
@@ -390,7 +345,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 reveal reveal-up reveal-delay-3">
+                    <div class="trainer-card">
                         <div class="service-card text-center h-100">
                             <div class="img-zoom-wrap rounded-4 overflow-hidden mb-3">
                                 <img src="https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?auto=format&fit=crop&w=400&q=80"
@@ -402,7 +357,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 reveal reveal-up reveal-delay-4">
+                    <div class="trainer-card">
                         <div class="service-card text-center h-100">
                             <div class="img-zoom-wrap rounded-4 overflow-hidden mb-3">
                                 <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80"
@@ -491,8 +446,8 @@
                         program outbound, team building, dan gathering mereka kepada kami.</p>
                 </div>
 
-                <div class="fan-stack reveal reveal-scale">
-                    <div class="testimonial-card testimonial-card--left">
+                <div class="trainer-stack reveal reveal-scale">
+                    <div class="testimonial-card">
                         <div class="testimonial-card__stars" aria-label="Rating 5 dari 5">★★★★★</div>
                         <i class="bi bi-quote testimonial-card__quote" aria-hidden="true"></i>
                         <p class="testimonial-card__text">Kualitas program dan ketepatan waktu pelaksanaan
@@ -509,7 +464,7 @@
                         </div>
                     </div>
 
-                    <div class="testimonial-card testimonial-card--center">
+                    <div class="testimonial-card">
                         <div class="testimonial-card__stars" aria-label="Rating 5 dari 5">★★★★★</div>
                         <i class="bi bi-quote testimonial-card__quote" aria-hidden="true"></i>
                         <p class="testimonial-card__text">Program leadership training yang kami ikuti memberikan
@@ -526,7 +481,7 @@
                         </div>
                     </div>
 
-                    <div class="testimonial-card testimonial-card--right">
+                    <div class="testimonial-card">
                         <div class="testimonial-card__stars" aria-label="Rating 5 dari 5">★★★★★</div>
                         <i class="bi bi-quote testimonial-card__quote" aria-hidden="true"></i>
                         <p class="testimonial-card__text">Dari sesi konsultasi, persiapan, hingga pelaksanaan di
@@ -555,7 +510,7 @@
                     <p class="cta-banner__text">Hubungi tim kami untuk konsultasi gratis program outbound sesuai
                         kebutuhan Anda.</p>
                     <div class="cta-banner__actions">
-                        <a href="https://wa.me/6281234567890" class="btn-white" target="_blank" rel="noopener"><i
+                        <a href="https://wa.me/6282211221909" class="btn-white" target="_blank" rel="noopener"><i
                                 class="bi bi-whatsapp" aria-hidden="true"></i> Chat WhatsApp</a>
                         <a href="contact.html" class="btn-outline-brand"><i class="bi bi-envelope"
                                 aria-hidden="true"></i> Hubungi Kami</a>
@@ -587,10 +542,10 @@
                             aria-label="Facebook Outbound Malang"><i class="bi bi-facebook" aria-hidden="true"></i></a>
                         <a href="https://www.youtube.com/@outboundmalang" target="_blank" rel="noopener"
                             aria-label="YouTube Outbound Malang"><i class="bi bi-youtube" aria-hidden="true"></i></a>
-                        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener"
+                        <a href="https://wa.me/6282211221909" target="_blank" rel="noopener"
                             aria-label="WhatsApp Outbound Malang"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
                     </div>
-                    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Outbound%20Malang" class="btn-brand mt-4"
+                    <a href="https://wa.me/6282211221909?text=Halo%20Admin%20Outbound%20Malang" class="btn-brand mt-4"
                         target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> Hubungi
                         Admin</a>
                 </div>
@@ -625,8 +580,8 @@
                             Timur 65336</li>
                         <li><i class="bi bi-envelope-fill" aria-hidden="true"></i><a
                                 href="mailto:outboundmalang@gmail.com">outboundmalang@gmail.com</a></li>
-                        <li><i class="bi bi-telephone-fill" aria-hidden="true"></i><a href="tel:+6281234567890">+62
-                                812-3456-7890</a></li>
+                        <li><i class="bi bi-telephone-fill" aria-hidden="true"></i><a href="tel:+6282211221909">+62
+                                822-1122-1909</a></li>
                     </ul>
                 </div>
             </div>
@@ -641,7 +596,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank" rel="noopener"
+    <a href="https://wa.me/6282211221909" class="whatsapp-float" target="_blank" rel="noopener"
         aria-label="Chat WhatsApp Outbound Malang"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
     <button class="back-to-top" aria-label="Kembali ke atas"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
 
